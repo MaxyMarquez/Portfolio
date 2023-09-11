@@ -112,7 +112,7 @@ const Skills = () => {
                     </button>
                 </div>
                 <div className={` ${animation ? 'fade-in' : 'fade-out'} bg-transparent w-full flex justify-center items-center flex-wrap flex-col`}>
-                    <ul className='w-full mt-5 z-50 bg-transparent flex flex-wrap gap-1 items-center justify-center sm:px-5 md:px-10 lg:px-15 xl:px-20'>
+                    <ul className='w-96 max-sm:w-72 mt-5 z-50 bg-transparent grid grid-cols-3 gap-x-5 gap-y-2 grid-rows-2 place-items-center'>
                         {activeSkills.map((skill, index) => (
                             <li key={index} className='group sm:w-32 w-24 sm:h-32 h-24 bg-neutral-900 hover:bg-neutral-950  duration-300  p-5 relative flex items-center justify-center'>
                                 <img className='group-hover:scale-110 bg-transparent p-3 duration-300' src={skill.image} alt='' />
