@@ -116,11 +116,12 @@ const Skills = () => {
 
                 >
                     <div className='bg-transparent w-full flex justify-center items-center flex-wrap'>
-                        <ul className='mt-5 z-50 bg-transparent flex justify-start'>
+                        <ul className='z-50 bg-transparent flex items-center justify-start flex-wrap'>
                             {frontEndSkills.map((skill, index) => (
-                                <li key={index} className='bg-transparent bg-neutral-900  duration-300  p-5 relative flex items-center justify-center'>
-                                    <img className='bg-transparent max-sm:p-0 p-3 w-[350px]' src={skill.image} alt='' />
-                                    <p className='absolute bottom-0 text-gray-500 max-sm:text-[15px] bg-transparent'>{skill.name}</p>
+                                <li key={index} className='bg-transparent bg-neutral-900 relative flex items-center justify-center flex-wrap'>
+
+                                    <img className='bg-transparent max-sm:p-1 m-1 p-3 max-sm:w-[80px] w-[200px]' src={skill.image} alt='' />
+                                    {/* <p className='absolute bottom-0 text-gray-500 max-sm:text-[12px] bg-transparent'>{skill.name}</p> */}
                                 </li>
                             ))}
                         </ul>
@@ -132,8 +133,6 @@ const Skills = () => {
                     translateY={['-10%', '100%']}
                     scale={[.5, 1]}
                     easing="easeInQuad"
-
-
                 >
                     <div className=''>
                         <h1 className='text-9xl text-gray-600 text-shadow'>Backend</h1>
@@ -141,7 +140,7 @@ const Skills = () => {
                     </div>
                 </Parallax>
                 <Parallax
-                    translateX={['50%', '-40%']}
+                    translateX={['50%', '-15%']}
                     scale={[1, 1]}
                     easing="easeOutQuad"
                     speed={5}
