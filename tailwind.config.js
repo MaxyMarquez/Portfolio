@@ -13,6 +13,9 @@ export default {
         DEFAULT: '-1px 3px 10px rgb(0,0,0)',
         lg: '0 8px 16px var(--tw-shadow-color)',
       },
+      borderRadius: {
+        'blob': '72% 28% 41% 59% / 55% 44% 49% 34%;',
+      }
     },
   },
   plugins: [

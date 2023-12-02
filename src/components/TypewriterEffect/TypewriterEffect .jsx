@@ -28,7 +28,7 @@ const TypewriterEffect = ({ text, speed, delay, showCursor }) => {
     }, [text, speed, currentIndex, showCursor]);
 
     return (
-        <pre className="typewriter-text">
+        <pre className="typewriter-text bg-transparent">
             {displayText}
             {isCursorVisible && <span className="blinking-cursor">|</span>}
         </pre>
